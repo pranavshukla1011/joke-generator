@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Chuck-Norris-Project</title>
+
+    <style>
+        .container{
+            display:flex;
+            height:50vh;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" id="inputform">
+            <h3>Chuck Norris Joke Generator</h3>
+            <div class="row">
+                <div class="col s12">
+                    <div class="input-field">
+                        <input type="number" id="jokenumber">
+                        <label for="#jokenumber">Enter Number of Jokes you want....</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6 offset-s3">
+                    <div class="input-field">
+                        <input type="submit" value="Click to view jokes" class="getjokes btn indigo darken-4">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container" id="jokes">
+        <div class="row">
+            
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
