@@ -15,25 +15,23 @@ function getJokes(e){
 
             const val = JSON.parse(xhr.responseText);
             
-            let output;
+            let output = '';
             if(val.type === "success"){
                 val.value.forEach(function(ele){
                     output += `
-                       
                             <div class="col s12">
                                <div>
                                <h4>Joke Number : ${ele.id} </h4>
                                <p>${ele.joke}</p>
                                </div>
                             </div>
-                       
                     `;
                 })
             }
             else{
                 output = `Something is not right`
             }
-            document.querySelector('#jokes').childNodes[1].innerHTML = output;
+            document.querySelector('#jokes').innerHTML = output;
         }
     }
     xhr.send();
